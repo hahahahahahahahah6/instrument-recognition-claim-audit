@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "instrument-recognition-claim-audit"
+version = "0.1.0"
+description = "Offline static documentation claim auditor"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+instrument-recognition-claim-audit = "instrument_recognition_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["instrument_recognition_claim_audit*", "tests"]
